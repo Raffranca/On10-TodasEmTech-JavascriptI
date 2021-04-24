@@ -2,7 +2,6 @@ function criarTabela(event) {
     event.preventDefault();
 
     let pegaTitulo = document.getElementById('titulo').value;
-    let pegaSubtitulo = document.getElementById('subtitulo').value;
     let pegaIsbn = document.getElementById('isbn').value;
     let pegaAutor = document.getElementById('autor').value;
     let pegaPagina = document.getElementById('pages').value;
@@ -15,9 +14,6 @@ function criarTabela(event) {
     let td = document.createElement('td');
     td.textContent = pegaTitulo;
     tr.appendChild(td);
-    let tdSubtitulo = document.createElement('td');
-    tdSubtitulo.textContent = pegaSubtitulo;
-    tr.appendChild(tdSubtitulo);
     let tdIsbn = document.createElement('td');
     tdIsbn.textContent = pegaIsbn;
     tr.appendChild(tdIsbn);
@@ -56,10 +52,10 @@ function criarBotao() {
 
 
 /*<ul>
-<li>
-    Título: ${pegarTitulo}, Autor: ${pegarAutor}, ISBN: ${pegarISBN}, Data da Publicação: ${pegarDataPublicacao},
-    Páginas: ${pegarQtdPaginas}, Data inserção no sistema: ${dataInsercao}, ${horarioInsercao}
-</li>
+    <li>
+        Título: ${pegarTitulo}, Autor: ${pegarAutor}, ISBN: ${pegarISBN}, Data da Publicação: ${pegarDataPublicacao},
+        Páginas: ${pegarQtdPaginas}, Data inserção no sistema: ${dataInsercao}, ${horarioInsercao}
+    </li>
 </ul>*/
 
 /* document.getElementById('corpo_tabela').innerHTML += `
