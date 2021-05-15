@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Livros</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>Lista Livros</h1>
+            <img src="img/story-book.png" class="img-livro" alt="imagem livro">
+        </div>       
+    </header>
+
+    <form class="form-group" onsubmit="criarTabela(event)">
+        
+            <div class="formulario">
+                <label class="legenda" for="titulo">Título</label>
+                <input class="caixa" type="text" id="titulo" placeholder="Título" required="required">
+            </div>
+            <div class="formulario">
+                <label class="legenda" for="autor">Autor</label>
+                <input class="caixa" type="text" id="autor" placeholder="Autor" required="required">
+            </div>
+            <div class="formulario">
+                <label class="legenda" for="isbn">ISBN</label>
+                <input class="caixa" type="text" placeholder="ISBN" id="isbn">
+            </div>
+            <div class="formulario">
+                <label class="legenda" for="pages">Páginas</label>
+                <input class="caixa" type="number" id="pages" placeholder="Páginas" required="required">
+            </div>
+            <div class="formulario">
+                <label class="legenda" for="data">Data de Publicação</label>
+                <input class="caixa" type="date" id="data" placeholder="Data da Publicação" required="required">
+            </div>
+            <div>
+                <input class="botao" type="submit">
+            </div>
+        
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Subtitulo</th>
+                <th>ISBN</th>
+                <th>Autor</th>
+                <th>Páginas</th>
+                <th>Data de publicação</th>
+                <th>Data Inserção</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+
+        </tbody>
+    </table>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
